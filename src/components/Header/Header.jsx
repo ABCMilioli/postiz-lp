@@ -55,7 +55,12 @@ const Header = () => {
 
             <div className="nav-buttons">
               {/* <button className="btn btn-ghost">Entrar</button> */}
-              <button className="btn btn-primary">Começar agora!</button>
+              <button 
+                className="btn btn-primary"
+                onClick={() => window.location.href = import.meta.env.VITE_CTA_URL}
+              >
+                Começar agora!
+              </button>
             </div>
           </nav>
 

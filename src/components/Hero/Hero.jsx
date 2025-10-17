@@ -56,7 +56,10 @@ const Hero = () => {
           </div>
 
           <div className="hero-cta animate-fade-in">
-            <button className="btn btn-hero-primary">
+            <button 
+              className="btn btn-hero-primary"
+              onClick={() => window.location.href = import.meta.env.VITE_CTA_URL}
+            >
               Comece agora!
             </button>
             {/* <button className="btn btn-hero-secondary">
@@ -103,5 +106,6 @@ const Hero = () => {
 }
 
 export default Hero
+
 
 

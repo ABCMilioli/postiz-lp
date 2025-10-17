@@ -142,3 +142,4 @@ transition: all 0.3s ease;
 **Resultado**: Site 100% preto com acentos em gradiente laranja/rosa e textos brancos, criando um visual moderno e impactante! 🔥
 
 
+

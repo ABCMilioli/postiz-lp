@@ -19,7 +19,10 @@ const CTA = ({ secondary }) => {
           </div>
 
           <div className="cta-buttons">
-            <button className="btn btn-cta-primary">
+            <button 
+              className="btn btn-cta-primary"
+              onClick={() => window.location.href = import.meta.env.VITE_CTA_URL}
+            >
               <FaRocket /> Começar Agora
             </button>
             {/* <button className="btn btn-cta-secondary">
