@@ -1,0 +1,152 @@
+.who-is-for {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.who-is-for .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.who-is-for .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.who-is-for .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.who-is-for .section-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.audience-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+}
+
+.audience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--card-color);
+}
+
+.audience-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--card-color), var(--card-color));
+  opacity: 0.1;
+  transition: all 0.3s ease;
+}
+
+.audience-card:hover .audience-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.audience-icon svg {
+  font-size: 2rem;
+  color: var(--card-color);
+}
+
+.audience-card:hover .audience-icon svg {
+  color: #ffffff;
+}
+
+.audience-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.audience-description {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .who-is-for {
+    padding: 60px 20px;
+  }
+
+  .who-is-for .section-title {
+    font-size: 2rem;
+  }
+
+  .who-is-for .section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .audience-card {
+    padding: 32px 24px;
+  }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 480px) {
+  .who-is-for {
+    padding: 40px 16px;
+  }
+
+  .who-is-for .section-title {
+    font-size: 1.75rem;
+  }
+
+  .who-is-for .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .audience-card {
+    padding: 28px 20px;
+  }
+
+  .audience-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .audience-icon svg {
+    font-size: 1.75rem;
+  }
+
+  .audience-title {
+    font-size: 1.25rem;
+  }
+
+  .audience-description {
+    font-size: 0.9375rem;
+  }
+}
+
